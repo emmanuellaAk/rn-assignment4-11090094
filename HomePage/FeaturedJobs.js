@@ -81,20 +81,19 @@ const jobs = [
   background: require('../assets/Background.png'),
   backgroundColor: '#9C18DB'
 }
-
 ];
 
 const Card = ({ title, subtitle, location, salary, icon, background, backgroundColor }) => {
   return (
-    <View style={[styles.jobSection, { backgroundColor }]}>
+    <View style={[styles.Section, { backgroundColor }]}>
       <Image source={background} style={styles.background}></Image>
-      <View style={styles.textSection}>
-        <Text style={styles.title}>{title}</Text>
-        <Text style={styles.subtitle}>{subtitle}</Text>
-        <Text style={styles.location}>{location}</Text>
-        <Text style={styles.salary}>{salary}</Text>
-        <View style={styles.rectangle}>
-          <Image source={icon} style={styles.icon}></Image>
+      <View style={styles.textarea}>
+        <Text style={styles.titles}>{title}</Text>
+        <Text style={styles.subtitles}>{subtitle}</Text>
+        <Text style={styles.locations}>{location}</Text>
+        <Text style={styles.salaries}>{salary}</Text>
+        <View style={styles.rectangles}>
+          <Image source={icon} style={styles.icons}></Image>
         </View>
       </View>
     </View>
@@ -169,7 +168,7 @@ const styles = StyleSheet.create({
     lineHeight: 16.8,
   },
 
-  jobSection: {
+  Section: {
     width: 280,
     height: 186,
     marginRight: 24,
@@ -189,13 +188,13 @@ const styles = StyleSheet.create({
     opacity: 0.06,
   },
 
-  textSection: {
+  textarea: {
     flex: 1, 
     justifyContent: 'center',
     padding: 20,                
   },
 
-  title: {
+  titles: {
     position: 'absolute',
     color: '#FFFFFF',
     top: 20,
@@ -207,7 +206,7 @@ const styles = StyleSheet.create({
     lineHeight: 20.8,
   },
 
-  subtitle: {
+  subtitles: {
     position: 'absolute',
     color: '#FFFFFF',
     top: 42,
@@ -219,7 +218,7 @@ const styles = StyleSheet.create({
     fontWeight: '400',
   },
 
-  location: {
+  locations: {
     position: 'absolute',
     color: '#FFFFFF',
     bottom: 15,
@@ -232,7 +231,7 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 
-  salary: {
+  salaryies: {
     position: 'absolute',
     color: '#FFFFFF',
     bottom: 15,
@@ -244,7 +243,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
 
-  rectangle: {
+  rectangles: {
     position: 'absolute',
     width: 46,
     height: 46,
@@ -254,7 +253,7 @@ const styles = StyleSheet.create({
     left: 20,
   },
 
-  icon: {
+  icons: {
     top: 11,
     left: 11,
   },

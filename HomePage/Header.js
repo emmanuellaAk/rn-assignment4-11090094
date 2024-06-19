@@ -2,12 +2,12 @@ import {View, Text, Image, StyleSheet} from "react-native";
 
 function Header(){
     return (
-        <View style={styles.headerSection}>
-                <Text style={styles.title}>Eric Atsu</Text>
-                <Text style={styles.subtext}>eric@gmail.com</Text>
-                <View style={styles.imageSection}>
-                    <Image style={styles.profile} source={require('../assets/profile.jpeg')}></Image>
-                    <View style={styles.redDot}/>
+        <View style={styles.header}>
+                <Text style={styles.titles}>Eric Atsu</Text>
+                <Text style={styles.subtitletext}>eric@gmail.com</Text>
+                <View style={styles.imageArea}>
+                    <Image style={styles.profiles} source={require('../assets/profile.jpeg')}></Image>
+                    <View style={styles.dot}/>
                 </View>
         </View>
         
@@ -16,7 +16,7 @@ function Header(){
 
 
 const styles = StyleSheet.create({
-    headerSection: {
+    header: {
         display: 'flex',
         justifyContent: 'space-between',
         alignContent: 'center',
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         width: '100%',
     },
 
-    title: {
+    titles: {
         position:'absolute',
         width: '254px',
         height: '36px',
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         color: '#0D0D26',
     },
 
-    subtext: { 
+    subtitletext: { 
         position: 'absolute',
         width: '254px',
         height: '24px',
@@ -49,11 +49,11 @@ const styles = StyleSheet.create({
         color: '#95969D',
     },
     
-    imageSection: {
+    imageArea: {
         position: 'relative',
     },
 
-    profile: { 
+    profiles: { 
         width: 54,
         height: 54,
         top: 72,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         borderRadius: 100,
     },
 
-    redDot: {
+    dot: {
         position: 'absolute',
         top: 75,
         left: 375,
