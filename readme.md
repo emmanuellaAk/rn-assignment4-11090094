@@ -34,5 +34,7 @@ The `Login` component integrates the `Login Header`, `Form`, and `Footer` compon
 ## Styles
 Each component comes with its own `StyleSheet` for styling various elements like text, images, and layout. These styles ensure a consistent and visually appealing user interface throughout the application.
 
+![dashboard](https://github.com/emmanuellaAk/rn-assignment4-11090094/assets/137521867/1b0226ed-439b-490e-b8c5-9c2a143ad2c3)
 
 
+![login](https://github.com/emmanuellaAk/rn-assignment4-11090094/assets/137521867/1e78d82f-6ce1-4563-9dbb-96b0aa434b8a)
